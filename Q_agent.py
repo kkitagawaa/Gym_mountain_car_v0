@@ -51,3 +51,5 @@ class Q_agent(object):
         td_target = reward + GAMMA * np.max(self.Q[next_state])
         td_error = td_target - self.Q[state][action]
         self.Q[state][action] += ALPHA * td_error
+
+# sample branch
